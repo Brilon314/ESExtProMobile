@@ -38,12 +38,12 @@ var GLOBAL = {
 		var mensajeError = document.createElement("div");
 		mensajeError.className = "mensajeError";
 		mensajeError.innerHTML = msg;
-		document.getElementById("contenido").prepend(mensajeError);
+		document.getElementById("#barra_sup").prepend(mensajeError);
 
 		if(time != undefined)
 		{
 			setTimeout(function(){
-			 	document.getElementById("contenido").querySelector(".mensajeOk").forEach(function callback(obj , index){ 
+			 	document.getElementById("#barra_sup").querySelector(".mensajeOk").forEach(function callback(obj , index){ 
 			 		if(obj.innerText == msg) 
 			 			obj.remove() 
 			 	});
@@ -54,12 +54,12 @@ var GLOBAL = {
 		var mensajeOk = document.createElement("div");
 		mensajeOk.className = "mensajeOk";
 		mensajeOk.innerHTML = msg;
-		document.getElementById("contenido").prepend(mensajeOk);
+		document.getElementById("#barra_sup").prepend(mensajeOk);
 
 		if(time != undefined)
 		{
 			setTimeout(function(){
-			 	document.getElementById("contenido").querySelector(".mensajeOk").forEach(function callback(obj , index){ 
+			 	document.getElementById("#barra_sup").querySelector(".mensajeOk").forEach(function callback(obj , index){ 
 			 		if(obj.innerText == msg)
 			 			obj.remove() 
 			 	});
@@ -70,12 +70,12 @@ var GLOBAL = {
 		var mensajeInfo = document.createElement("div");
 		mensajeInfo.className = "mensajeInfo";
 		mensajeInfo.innerHTML = msg;
-		document.getElementById("contenido").prepend(mensajeInfo);
+		document.getElementById("#barra_sup").prepend(mensajeInfo);
 
 		if(time != undefined)
 		{
 			setTimeout(function(){
-			 	document.getElementById("contenido").querySelector(".mensajeOk").forEach(function callback(obj , index){ 
+			 	document.getElementById("#barra_sup").querySelector(".mensajeOk").forEach(function callback(obj , index){ 
 			 		if(obj.innerText == msg)
 			 			obj.remove() 
 			 	});
